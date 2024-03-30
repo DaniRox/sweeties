@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.htmlt", "/src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
   theme: {
     extend: {
       fontFamily: {
@@ -17,17 +21,21 @@ export default {
       },
 
       colors: {
-        eerie: "1F2119",
-        hookers: "517664",
-        tiffany: "7BC5B3",
-        azure: "D6E5E3",
-        french: "CACFD6",
-        snow: "F0EBED",
-        smoke: "F3F1F2",
+        eerie: "#1F2119",
+        hookers: "#517664",
+        tiffany: "#7BC5B3",
+        azure: "#D6E5E3",
+        french: "#CACFD6",
+        snow: "#F0EBED",
+        smoke: "#F3F1F2",
       },
 
+      backgroundImage: {
+        "img-hero": "URL('./src/assets/background-hero.jpg')"
+      }
     },
   },
+  
   plugins: [],
 }
 
